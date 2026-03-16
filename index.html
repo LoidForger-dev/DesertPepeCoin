@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Desert Pepe ($DSPP+) – Ride the desert. Become legendary.</title>
+  <!-- SEO meta -->
+  <meta name="description" content="Desert Pepe is a meme coin born from the sands of the crypto desert. Early community. Alpha drops. Memes and updates. Join the caravan on Solana.">
+  <meta name="keywords" content="Desert Pepe, DSPP, meme coin, Solana, pump.fun, crypto, DeFi">
+  <meta name="author" content="Desert Pepe Community">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAulJREFUWEftlU9oE0EUh79dtqS0HltQgp4kB6OxtVpFvSh4EFTwIFQELXgWBcGDB/GgIAjeehI8eBDBm0XwIAgqUhD/oKAi1R6MWFobY6zZYHeb2dlJzCa7TYPoxS47MPswmX3v++0/bwX/e5H4Pz4sAXXdI4D6v9ZzD2Ct60YF5oAOYAuwBdgCbAG2AFuALcAWYAuwBdgCbAG2AFuALcAWYAuwBdgCbAG2gH8oYDAYnJqamiKKop9fDgaDm6enp61Wq/WnG0gul8sFAoFGo9H4lQwGg0Gv17t8ZmbmTqvV+j2B5XJ5T6lUOler1a7+Spqmadrt9tM3b968MJlM3q7X65u2Tqfz2eVyZUdGRu66XK5vTqdzq9vt7u90OlfWajUHx3Hc7XZ/E0VRyTCMrF6vvyCEjHq93pter/e1Tqfzud1uT+q0Wq3vHo/nhcfjueX1esd7vd5kr9e77HQ6y1KpNKdSqT7n8/k7lUrlq8fjmdZqtW8MBkM4EAiELRZLzGQyxXU63U2LxfLBZrN9EUXxq8lkSptMpjsWiyVut9u/O53Oj8FgMOn3+z8QQuQqlSpHq9XG0+n0E0mS1t1uNzGbzYmhoaFZQggmJyf3E0I+2+32o06n8wMh5K3b7T5hNps/SJIEIQQYhrlHCJGtVuuKyWQq9/v9Oa1Wm9RqtdP9fv9FMBhMOhyOjxaLZc1sNs+r1eovgiA8Hx0dvTEzM3NKFMVvExMT8yqV6u3w8PC5UqkES0tLp1Qq1ZJarb5sMpk+DwwM5Hw+30dCyNz09PRFUigej18eGxvLRCKR4x6PJ9Pv9wmlUklomgYhBIRhQKvVgl6v/9lsNp/b7fYzIQRwHAdqtRpsNhtIkgT0ej0olUrY3NwESZL+lFw+n79RLBZv6nQ6Mjs7S5LJJBFFkfh8PjI2NkYWFhbI2toaURSF5HI5IkkSyeVyBEB/hVw2m/2t/M8u+B0RgN8RAdgCbAG2AFuALcAWYAuwBdgCbAG2AFuALcAWYAuwBdgCbAG2AFuALcAWYAv8NwV+AIo6q8EOAeR2AAAAAElFTkSuQmCC">
+  <!-- Fonts & styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* Background image with reduced opacity */
+    body {
+      position: relative;
+      background-color: #0B1220; /* fallback */
+      font-family: 'Inter', sans-serif;
+      color: #D1D9E6;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('background.png'); /* uses your file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: -1;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #0B1220 0%, #0F1B2E 100%);
+      opacity: 0.92;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    h1, h2, h3, .orbitron { font-family: 'Orbitron', sans-serif; font-weight: 700; letter-spacing: 1px; }
+    .container { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+
+    /* glass + glow */
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 30px;
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .glass-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(46,242,255,0.4);
+    }
+    .neon-cyan { color: #2EF2FF; }
+    .neon-mint { color: #57F2B2; }
+    .neon-gold { color: #F2C94C; }
+    .gradient-text {
+      background: linear-gradient(90deg,#F2C94C,#57F2B2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .gradient-btn {
+      background: linear-gradient(90deg,#2EF2FF,#57F2B2);
+      border: none;
+      border-radius: 30px;
+      padding: 12px 28px;
+      font-weight: 600;
+      color: #0B1220;
+      box-shadow: 0 0 20px rgba(46,242,255,0.5);
+      transition: 0.2s;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-btn:hover { box-shadow: 0 0 35px rgba(87,242,178,0.7); }
+    .buy-btn-nav {
+      background: linear-gradient(90deg,#F2C94C,#57F2B2);
+      color:#0B1220;
+      font-weight:600;
+      border-radius:30px;
+      padding: 10px 24px;
+      border: none;
+    }
+    /* header */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 28px;
+      margin: 20px auto;
+      max-width: 1300px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #57F2B2;
+      box-shadow: 0 0 15px #57F2B2;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #57F2B2; transform: scale(1); }
+      50% { box-shadow: 0 0 25px #57F2B2, 0 0 40px #2EF2FF; transform: scale(1.05); }
+      100% { box-shadow: 0 0 10px #57F2B2; transform: scale(1); }
+    }
+    .nav-menu { display: flex; gap: 28px; align-items: center; }
+    .nav-menu a { color: #D1D9E6; text-decoration: none; font-weight: 500; transition: 0.2s; font-size: 16px; }
+    .nav-menu a:hover { color: #57F2B2; text-shadow: 0 0 8px #57F2B2; }
+    .mobile-menu-toggle { display: none; font-size: 28px; cursor: pointer; }
+    /* wave animation */
+    .wave-bg {
+      position: relative;
+      overflow: hidden;
+    }
+    .wave-svg {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0.2;
+      animation: waveMove 12s infinite linear;
+    }
+    @keyframes waveMove {
+      0% { transform: translateX(0) scaleX(1); }
+      50% { transform: translateX(-3%) scaleX(1.02); }
+      100% { transform: translateX(0) scaleX(1); }
+    }
+    /* hero */
+    .hero { position: relative; padding: 40px 0 60px; text-align: center; z-index: 2; }
+    .mascot-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #F2C94C;
+      box-shadow: 0 0 30px rgba(242,201,76,0.5);
+      margin-bottom: 20px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .mascot-logo:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 0 45px #57F2B2, 0 0 70px #2EF2FF;
+      border-color: #57F2B2;
+    }
+    .hero h1 { font-size: clamp(40px, 10vw, 72px); font-weight: 700; letter-spacing: 3px; line-height: 1.1; }
+    .hero-sub { font-size: 18px; color: #B6C2CF; max-width: 600px; margin: 20px auto; }
+    .cta-large { font-size: 1.2rem; padding: 16px 38px; margin: 20px 0; }
+    /* roadmap timeline */
+    .timeline-horizontal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 40px 0;
+    }
+    .timeline-node {
+      flex: 1 1 180px;
+      background: #101827;
+      border-radius: 15px;
+      padding: 20px;
+      border-left: 3px solid #57F2B2;
+      box-shadow: 0 0 15px rgba(87,242,178,0.3);
+    }
+    .timeline-dot {
+      width: 14px; height: 14px;
+      background: #57F2B2;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #57F2B2;
+      margin-bottom: 12px;
+    }
+    /* pie dummy (conic) */
+    .pie-placeholder {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(#2EF2FF 0% 40%, #57F2B2 40% 65%, #F2C94C 65% 80%, #6C8BFF 80% 92%, #00FFA3 92% 100%);
+      filter: drop-shadow(0 0 15px rgba(87,242,178,0.6));
+      margin: 20px auto;
+    }
+    .legend { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0; }
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-color { width: 20px; height: 20px; border-radius: 4px; }
+    /* ca box */
+    .ca-box {
+      background:#0E1625;
+      border-radius:20px;
+      padding:20px;
+      border:1px solid rgba(255,255,255,0.05);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .ca-address {
+      font-family: monospace;
+      font-size: 1.1rem;
+      background: rgba(0,0,0,0.3);
+      padding: 10px 18px;
+      border-radius: 40px;
+      border: 1px solid #2EF2FF33;
+      word-break: break-all;
+    }
+    .copy-btn {
+      background:linear-gradient(90deg,#2EF2FF,#57F2B2);
+      border-radius:25px;
+      padding:10px 24px;
+      border: none;
+      font-weight: 600;
+      color: #0B1220;
+      cursor: pointer;
+    }
+    /* community cards */
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .social-card {
+      background: rgba(255,255,255,0.04);
+      border-radius:16px;
+      padding:25px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #D1D9E6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .social-card:hover {
+      transform: translateY(-6px);
+      box-shadow:0 0 15px rgba(46,242,255,0.2);
+    }
+    .social-card .btn {
+      background: linear-gradient(90deg,#2EF2FF,#57F2B2);
+      border-radius:20px;
+      padding: 8px 20px;
+      color: #0B1220;
+      font-weight: 600;
+      margin-top: 5px;
+      display: inline-block;
+      width: fit-content;
+    }
+    /* icon styles - reduced glow */
+    .social-icon {
+      width: 42px;
+      height: 42px;
+      fill: currentColor;
+      color: #9FEFE0;
+      filter: drop-shadow(0 0 3px rgba(87,242,178,0.3));
+      transition: color 0.2s;
+    }
+    .social-card:hover .social-icon {
+      color: #57F2B2;
+      filter: drop-shadow(0 0 5px rgba(46,242,255,0.4));
+    }
+
+    /* Dexscreener placeholder */
+    .chart-placeholder {
+      background: #101827;
+      border-radius: 25px;
+      padding: 60px 20px;
+      text-align: center;
+      border: 2px dashed #57F2B2;
+      box-shadow: 0 0 20px rgba(87,242,178,0.2);
+      font-size: 2rem;
+      font-family: 'Orbitron', sans-serif;
+      color: #57F2B2;
+      letter-spacing: 2px;
+    }
+    .chart-placeholder small {
+      display: block;
+      font-size: 1rem;
+      color: #B6C2CF;
+      margin-top: 15px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Scroll reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* chatbot */
+    .chatbot-toggle {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(145deg, #2EF2FF, #57F2B2);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0B1220;
+      font-size: 28px;
+      box-shadow: 0 0 25px #2EF2FF;
+      cursor: pointer;
+      z-index: 999;
+      border: none;
+    }
+    .chatbot-panel {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 320px;
+      max-width: calc(100vw - 60px);
+      background: #0F1B2E;
+      border: 1px solid #57F2B2;
+      border-radius: 25px;
+      padding: 20px;
+      box-shadow: 0 0 40px rgba(46,242,255,0.5);
+      backdrop-filter: blur(15px);
+      display: none;
+      z-index: 1000;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .chatbot-panel.show { display: flex; }
+    .chat-messages { max-height: 200px; overflow-y: auto; font-size: 14px; background: #0B1220; padding: 10px; border-radius: 16px; }
+    .chat-input-row { display: flex; gap: 6px; }
+    .chat-input-row input { flex: 1; background: #1E2A3A; border: none; border-radius: 30px; padding: 10px; color: white; }
+    .chat-input-row button { background: #57F2B2; border: none; border-radius: 30px; padding: 8px 14px; color: #0B1220; font-weight: 600; cursor: pointer; }
+
+    footer { text-align: center; padding: 40px 0 20px; border-top: 1px solid #243246; margin-top: 40px; color: #7F8FA0; font-size: 14px; }
+    @media (max-width: 768px) {
+      .nav-menu { display: none; position: absolute; top: 90px; left: 20px; right: 20px; background: rgba(11,18,32,0.95); backdrop-filter: blur(12px); border-radius: 30px; padding: 30px; flex-direction: column; z-index: 100; border: 1px solid #57F2B2; }
+      .nav-menu.show { display: flex; }
+      .mobile-menu-toggle { display: block; }
+      .navbar { padding: 12px 20px; }
+      .timeline-horizontal { flex-direction: column; }
+      .mascot-logo { width: 100px; height: 100px; }
+    }
+    hr { border-color: #243246; margin: 30px 0; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">
+    <img src="desertpepe.png" alt="Desert Pepe" class="logo-img">
+    <span style="font-family: Orbitron; font-weight: 700; color: #F2C94C;">DESERT PEPE</span>
+  </div>
+  <div class="nav-menu" id="navMenu">
+    <a href="#about">About</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#community">Community</a>
+    <a href="#ca">Contract</a>
+    <a href="https://join.pump.fun/HSag/1f6affjf" target="_blank" class="buy-btn-nav" style="color:#0B1220;">Buy $DSPP+</a>
+  </div>
+  <div class="mobile-menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('show')">☰</div>
+</div>
+
+<!-- HERO with mascot logo above title -->
+<section class="hero wave-bg">
+  <div style="position: relative; z-index: 2;">
+    <!-- Mascot logo added here -->
+    <img src="desertpepe.png" alt="Desert Pepe Mascot" class="mascot-logo">
+    <h1 class="gradient-text" style="font-size: clamp(48px, 12vw, 80px);">DESERT PEPE</h1>
+    <div class="hero-sub">Ride the desert. Become legendary.</div>
+    <p style="color:#B6C2CF; max-width: 600px; margin: 20px auto;">Early community. Alpha drops. Memes and updates.</p>
+    <a href="https://join.pump.fun/HSag/1f6affjf" target="_blank" class="gradient-btn cta-large">🔥 Buy $DSPP+ on Pump.fun</a>
+  </div>
+  <svg class="wave-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="none" stroke="url(#grad1)" stroke-width="4" d="M0,160 C320,280 420,60 840,160 C1260,260 1440,80 1440,80 L1440,320 L0,320 Z" opacity="0.5"/>
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#F2C94C;stop-opacity:0.8" />
+        <stop offset="50%" style="stop-color:#57F2B2;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#2EF2FF;stop-opacity:0.8" />
+      </linearGradient>
+    </defs>
+  </svg>
+</section>
+
+<div class="container">
+  <!-- All sections with reveal class -->
+  <section id="about" style="margin: 80px 0;" class="reveal">
+    <div class="glass-card" style="padding: 40px;">
+      <h2 class="gradient-text" style="margin-bottom: 20px;">🌵 About Desert Pepe</h2>
+      <p style="font-size: 1.2rem; color:#D1D9E6;">Desert Pepe is a meme coin born from the sands of the crypto desert.<br>Early community. Alpha drops. Memes and updates.</p>
+      <p style="margin-top: 20px;"><span class="neon-mint">Tagline:</span> <em>Ride the desert. Become legendary.</em></p>
+    </div>
+  </section>
+
+  <section id="roadmap" style="margin: 80px 0;" class="reveal">
+    <h2 class="gradient-text" style="text-align: center; margin-bottom: 40px;">🏜️ Roadmap</h2>
+    <div class="timeline-horizontal">
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <h3 class="neon-mint">Phase 1 – Desert Awakening</h3>
+        <ul style="list-style: none; margin-top: 10px;">
+          <li>✓ Token launch on Pump.fun</li>
+          <li>✓ Community building</li>
+          <li>✓ Website launch</li>
+          <li>✓ Meme creation</li>
+        </ul>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <h3 class="neon-mint">Phase 2 – Desert Expansion</h3>
+        <ul style="list-style: none;">
+          <li>✓ Social media growth</li>
+          <li>✓ Influencer marketing</li>
+          <li>✓ Dex tracker listings</li>
+        </ul>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <h3 class="neon-mint">Phase 3 – Legendary Oasis</h3>
+        <ul style="list-style: none;">
+          <li>✓ Partnerships</li>
+          <li>✓ Community events</li>
+          <li>✓ Ecosystem expansion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" style="margin: 80px 0;" class="reveal">
+    <h2 class="gradient-text" style="text-align: center;">📊 Tokenomics</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center; margin: 30px 0;">
+      <div><div class="pie-placeholder"></div></div>
+      <div>
+        <div class="legend">
+          <div class="legend-item"><span class="legend-color" style="background:#2EF2FF;"></span> Liquidity 40%</div>
+          <div class="legend-item"><span class="legend-color" style="background:#57F2B2;"></span> Treasury 25%</div>
+          <div class="legend-item"><span class="legend-color" style="background:#F2C94C;"></span> Community 15%</div>
+          <div class="legend-item"><span class="legend-color" style="background:#6C8BFF;"></span> Staking 12%</div>
+          <div class="legend-item"><span class="legend-color" style="background:#00FFA3;"></span> Presale 8%</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:#101827; border-radius:20px; padding:20px; text-align: center;">
+      <p><span class="neon-gold">Total Supply:</span> 1,000,000,000 DSPP+  |  <span class="neon-cyan">Tax: 0%</span>  |  <span class="neon-mint">Chain: Solana</span><br>Launch: Pump.fun · Community Driven Meme Coin</p>
+    </div>
+  </section>
+
+  <!-- DEXSCREENER placeholder "Coming Soon" -->
+  <section style="margin: 60px 0;" class="reveal">
+    <h2 class="gradient-text" style="text-align: center;">📈 Live Chart (Dexscreener)</h2>
+    <div class="chart-placeholder">
+      🚀 COMING SOON
+      <small>Dexscreener integration will appear here once trading starts</small>
+    </div>
+  </section>
+
+  <section id="community" style="margin: 80px 0;" class="reveal">
+    <h2 class="gradient-text" style="text-align: center;">💬 Community</h2>
+    <div class="community-grid">
+      <a href="https://x.com/desertpepe78080" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" width="42" height="42">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+        </svg>
+        <h3>X (Twitter)</h3>
+        <span class="btn">Follow</span>
+      </a>
+      <a href="https://t.me/DesertPepeCoin" target="_blank" class="social-card">
+        <svg class="social-icon" viewBox="0 0 24 24" width="42" height="42">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.2s-.2-.04-.29-.02c-.12.02-2.1 1.33-2.96 1.88-.28.18-.84.52-1.2.51-.4-.01-1.17-.23-1.74-.42-.7-.23-1.26-.35-1.21-.74.03-.2.29-.4.81-.62 1.26-.55 3.38-1.13 4.77-1.51 1.14-.32 2.15-.49 2.66-.51.97-.04 1.43.17 1.48.53.03.24-.05.66-.15 1.09z" fill="currentColor"/>
+        </svg>
+        <h3>Telegram</h3>
+        <span class="btn">Join</span>
+      </a>
+      <div class="social-card" style="cursor: default;">
+        <svg class="social-icon" viewBox="0 0 24 24" width="42" height="42">
+          <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.23 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.41-.31.82-.64 1.21-.98.03-.03.07-.03.11-.02 2.52 1.15 5.26 1.15 7.77 0 .03-.01.07-.01.11.02.39.34.8.67 1.21.98.03.03.03.09-.01.11-.52.31-1.07.57-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.02.02.05.03.07.02 1.7-.53 3.43-1.33 5.23-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z" fill="currentColor"/>
+        </svg>
+        <h3>Discord</h3>
+        <span class="btn" style="opacity:0.5">Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="ca" style="margin: 60px 0;" class="reveal">
+    <h2 class="gradient-text">📜 Contract Address (Solana)</h2>
+    <div class="ca-box">
+      <span class="ca-address" id="caText">CsHpPCXpRyARWzzpnZu11xmDwRezEtytEHHcET24pump</span>
+      <button class="copy-btn" id="copyBtn">📋 Copy CA</button>
+    </div>
+    <p style="font-size: 14px; color:#7F8FA0;">Chain: Solana · Always verify CA</p>
+  </section>
+
+  <hr>
+  <section style="padding: 20px; text-align: center; background: #0E1625; border-radius: 30px;" class="reveal">
+    <p style="color: #D8A25E;">⚠️ Disclaimer: $DSPP+ is a meme coin created for entertainment purposes only.<br>There is no intrinsic value or expectation of financial return.<br>Always do your own research before participating in cryptocurrency projects.</p>
+  </section>
+</div>
+
+<footer>
+  <p>© 2026 Desert Pepe · $DSPP+ · Ride the desert. Become legendary.</p>
+  <p style="margin-top: 8px;">🚀 Built by the community · #Solana</p>
+</footer>
+
+<!-- AI CHATBOT TOGGLE -->
+<div class="chatbot-toggle" id="chatToggle">💬</div>
+<div class="chatbot-panel" id="chatPanel">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span style="color:#57F2B2; font-weight: 600;">🤖 DSPP+ Assistant</span>
+    <span style="cursor: pointer;" id="closeChat">✖</span>
+  </div>
+  <div class="chat-messages" id="chatMessages"><div>👋 Ask me about Desert Pepe! (CA, tokenomics, links)</div></div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="e.g. What is CA?">
+    <button id="chatSend">Send</button>
+  </div>
+</div>
+
+<script>
+  // FAQ and chatbot (unchanged)
+  const faq = {
+    'ca': 'Contract address: CsHpPCXpRyARWzzpnZu11xmDwRezEtytEHHcET24pump on Solana',
+    'contract': 'Contract address: CsHpPCXpRyARWzzpnZu11xmDwRezEtytEHHcET24pump',
+    'buy': 'Buy here: https://join.pump.fun/HSag/1f6affjf',
+    'telegram': 'https://t.me/DesertPepeCoin',
+    'twitter': 'https://x.com/desertpepe78080',
+    'supply': 'Total supply: 1,000,000,000 DSPP+, 0% tax',
+    'chain': 'Solana',
+    'tokenomics': 'Liquidity 40%, Treasury 25%, Community 15%, Staking 12%, Presale 8%',
+    'roadmap': 'Phase1: launch, community, memes. Phase2: marketing, listings. Phase3: partnerships, oasis.',
+    'pepe': 'Desert Pepe is a meme coin on Solana, early community, alpha drops.',
+  };
+  function addMessage(msg, isUser = false) {
+    const chat = document.getElementById('chatMessages');
+    const div = document.createElement('div');
+    div.style.margin = '8px 0'; div.style.padding = '6px 10px'; div.style.background = isUser ? '#1E3A4A' : '#1F2E40';
+    div.style.borderRadius = '18px'; div.style.maxWidth = '90%'; div.style.alignSelf = isUser ? 'flex-end' : 'flex-start';
+    div.style.wordBreak = 'break-word'; div.textContent = msg;
+    chat.appendChild(div); chat.scrollTop = chat.scrollHeight;
+  }
+  document.getElementById('chatSend').addEventListener('click', () => {
+    const inp = document.getElementById('chatInput');
+    const q = inp.value.trim().toLowerCase();
+    if (!q) return;
+    addMessage(q, true);
+    inp.value = '';
+    let reply = "I'm not sure. Try asking about CA, buy, tokenomics, telegram, twitter, supply, roadmap.";
+    for (let key in faq) if (q.includes(key)) { reply = faq[key]; break; }
+    setTimeout(() => addMessage('🤖 ' + reply), 300);
+  });
+  document.getElementById('chatInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') document.getElementById('chatSend').click(); });
+  const toggle = document.getElementById('chatToggle');
+  const panel = document.getElementById('chatPanel');
+  toggle.addEventListener('click', () => { panel.classList.toggle('show'); });
+  document.getElementById('closeChat').addEventListener('click', () => { panel.classList.remove('show'); });
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    navigator.clipboard.writeText('CsHpPCXpRyARWzzpnZu11xmDwRezEtytEHHcET24pump');
+    alert('CA copied!');
+  });
+
+  // Scroll reveal observer
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
+  reveals.forEach(r => observer.observe(r));
+
+  // Optional pie chart
+  window.onload = function() {
+    if (document.getElementById('pieChart')) {
+      new Chart(document.getElementById('pieChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Liquidity 40%', 'Treasury 25%', 'Community 15%', 'Staking 12%', 'Presale 8%'],
+          datasets: [{
+            data: [40,25,15,12,8],
+            backgroundColor: ['#2EF2FF','#57F2B2','#F2C94C','#6C8BFF','#00FFA3'],
+            borderWidth: 0,
+          }]
+        },
+        options: { cutout:'60%', plugins: { legend: { display: false } } }
+      });
+    }
+  };
+</script>
+<!-- hidden canvas for chart.js fallback -->
+<div style="display: none;"><canvas id="pieChart" width="200" height="200"></canvas></div>
+</body>
+                                                    </html>
