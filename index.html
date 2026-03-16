@@ -120,6 +120,8 @@
       backdrop-filter: blur(10px);
       border-radius: 50px;
       border: 1px solid rgba(255,255,255,0.08);
+      position: relative; /* for z-index context */
+      z-index: 101;
     }
     .logo { display: flex; align-items: center; gap: 10px; }
     .logo-img {
@@ -369,22 +371,24 @@
 
     footer { text-align: center; padding: 40px 0 20px; border-top: 1px solid #243246; margin-top: 40px; color: #7F8FA0; font-size: 14px; }
 
-    /* Mobile menu - SOLID BACKGROUND FIX */
+    /* Mobile menu - FULL OVERLAY that covers all content below navbar */
     @media (max-width: 768px) {
       .nav-menu {
         display: none;
-        position: absolute;
-        top: 90px;
-        left: 20px;
-        right: 20px;
-        background: #0B1220 !important; /* fully opaque, with override */
-        backdrop-filter: none !important; /* remove any blur/transparency */
-        border-radius: 30px;
+        position: fixed; /* changed from absolute to fixed */
+        top: 80px; /* just below navbar */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px); /* cover rest of viewport */
+        background: #0B1220 !important;
+        backdrop-filter: none !important;
+        border-radius: 0; /* remove rounding to cover edges */
         padding: 30px;
         flex-direction: column;
-        z-index: 100;
-        border: 2px solid #57F2B2;
-        box-shadow: 0 0 30px rgba(87,242,178,0.3);
+        z-index: 200; /* higher than other content */
+        border-top: 2px solid #57F2B2; /* optional separator */
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+        overflow-y: auto; /* allow scrolling if many items */
       }
       .nav-menu.show { display: flex; }
       .mobile-menu-toggle { display: block; }
