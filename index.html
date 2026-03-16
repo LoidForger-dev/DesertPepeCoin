@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    /* Background image with reduced opacity */
+    /* Background image with increased visibility */
     body {
       position: relative;
       background-color: #0B1220; /* fallback */
@@ -33,7 +33,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: 0.15;
+      opacity: 0.35;
       pointer-events: none;
       z-index: -1;
     }
@@ -45,7 +45,7 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(180deg, #0B1220 0%, #0F1B2E 100%);
-      opacity: 0.92;
+      opacity: 0.6;
       pointer-events: none;
       z-index: -1;
     }
@@ -163,11 +163,11 @@
     /* hero */
     .hero { position: relative; padding: 40px 0 60px; text-align: center; z-index: 2; }
     .mascot-logo {
-      width: 120px;
-      height: 120px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #F2C94C;
+      border: 4px solid #F2C94C;
       box-shadow: 0 0 30px rgba(242,201,76,0.5);
       margin-bottom: 20px;
       transition: transform 0.4s, box-shadow 0.4s;
@@ -368,13 +368,29 @@
     .chat-input-row button { background: #57F2B2; border: none; border-radius: 30px; padding: 8px 14px; color: #0B1220; font-weight: 600; cursor: pointer; }
 
     footer { text-align: center; padding: 40px 0 20px; border-top: 1px solid #243246; margin-top: 40px; color: #7F8FA0; font-size: 14px; }
+
+    /* Mobile menu - SOLID BACKGROUND FIX */
     @media (max-width: 768px) {
-      .nav-menu { display: none; position: absolute; top: 90px; left: 20px; right: 20px; background: rgba(11,18,32,0.95); backdrop-filter: blur(12px); border-radius: 30px; padding: 30px; flex-direction: column; z-index: 100; border: 1px solid #57F2B2; }
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        right: 20px;
+        background: #0B1220 !important; /* fully opaque, with override */
+        backdrop-filter: none !important; /* remove any blur/transparency */
+        border-radius: 30px;
+        padding: 30px;
+        flex-direction: column;
+        z-index: 100;
+        border: 2px solid #57F2B2;
+        box-shadow: 0 0 30px rgba(87,242,178,0.3);
+      }
       .nav-menu.show { display: flex; }
       .mobile-menu-toggle { display: block; }
       .navbar { padding: 12px 20px; }
       .timeline-horizontal { flex-direction: column; }
-      .mascot-logo { width: 100px; height: 100px; }
+      .mascot-logo { width: 150px; height: 150px; }
     }
     hr { border-color: #243246; margin: 30px 0; }
   </style>
@@ -402,7 +418,7 @@
 <!-- HERO with mascot logo above title -->
 <section class="hero wave-bg">
   <div style="position: relative; z-index: 2;">
-    <!-- Mascot logo added here -->
+    <!-- Mascot logo bigger now -->
     <img src="desertpepe.png" alt="Desert Pepe Mascot" class="mascot-logo">
     <h1 class="gradient-text" style="font-size: clamp(48px, 12vw, 80px);">DESERT PEPE</h1>
     <div class="hero-sub">Ride the desert. Become legendary.</div>
@@ -628,4 +644,4 @@
 <!-- hidden canvas for chart.js fallback -->
 <div style="display: none;"><canvas id="pieChart" width="200" height="200"></canvas></div>
 </body>
-                                                    </html>
+</html>
